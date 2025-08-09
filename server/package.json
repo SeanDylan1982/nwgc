@@ -28,7 +28,7 @@
     "helmet": "^7.2.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.3",
-    "multer": "^1.4.5-lts.1",
+    "multer": "^2.0.2",
     "node-fetch": "^3.3.2",
     "reactdom": "^2.0.0",
     "recharts": "^3.1.0",
