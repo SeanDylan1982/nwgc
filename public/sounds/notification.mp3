@@ -1,0 +1,4 @@
+# This is a placeholder for the notification.mp3 file
+# In a real implementation, this would be an actual MP3 audio file
+# You can replace this with actual sound files or use the Web Audio API
+# to generate sounds programmatically as shown in generate-sounds.js

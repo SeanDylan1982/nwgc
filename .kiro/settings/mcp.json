@@ -1,0 +1,149 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ],
+      "env": {},
+      "disabled": false,
+      "autoApprove": [
+        "fetch"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/Sean/Desktop",
+        "/code"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "create_directory",
+        "edit_file"
+      ]
+    },
+    "usehooks": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-usehooks"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "build-my-own": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "build-my-own"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "concurrent-browser-mcp": {
+      "command": "npx",
+      "args": [
+        "concurrent-browser-mcp",
+        "--max-instances",
+        "20"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "octocode": {
+      "command": "npx",
+      "args": [
+        "octocode-mcp"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "packageSearch"
+      ]
+    },
+    "message-mcp": {
+      "command": "npx",
+      "args": [
+        "message-mcp@latest"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "codacy": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@codacy/codacy-mcp@latest"
+      ],
+      "env": {
+        "CODACY_ACCOUNT_TOKEN": "${input:codacy_account_token}"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "notion": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@notionhq/notion-mcp-server@latest"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer ${input:NOTION_TOKEN}\", \"Notion-Version\": \"2022-06-28\" }"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "sequentialthinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking@latest"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "sequentialthinking",
+        "sequentialthinking"
+      ]
+    },
+    "mongodb": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mongodb-mcp-server@latest"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "convex": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "convex@latest",
+        "mcp",
+        "start"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
