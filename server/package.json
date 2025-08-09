@@ -32,7 +32,7 @@
     "node-fetch": "^3.3.2",
     "reactdom": "^2.0.0",
     "recharts": "^3.1.0",
-    "socket.io": "^4.7.4",
+    "socket.io": "^4.8.1",
     "socketio": "^1.0.0",
     "web-push": "^3.6.7"
   },
